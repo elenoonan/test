@@ -12,7 +12,7 @@ and open the template in the editor.
     <body>
         <pre>
             <?php
-            print_r($_POST);
+            //print_r($_POST);
 
             $input_method = INPUT_POST;
             $formdata = array();
@@ -31,7 +31,7 @@ and open the template in the editor.
             $formdata['picture'] = filter_input($input_method, "picture", FILTER_SANITIZE_STRING);
 
 
-            print_r($formdata);
+            //print_r($formdata);
 
             if ($formdata['username'] === NULL ||
                     $formdata['username'] === FALSE ||
@@ -115,7 +115,7 @@ and open the template in the editor.
                     }
                 }
             }
-            print_r($errors);
+            //print_r($errors);
 
             if (empty($errors)) {
                 echo '<p>form data is valid</p>';
