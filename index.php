@@ -110,6 +110,29 @@ and open the template in the editor.
                         <input type="checkbox" name="languages[]" value="PHP"/> PHP
                     </div>
                 </div>
+                <!--inserting comments and profile picture boxes-->
+                <div class="row">   
+                    <div class="label">
+                        <label for="comments">Comments</label>
+                        <textarea id="comments" name="comments"></textarea>
+                    </div>
+                    <div class="error">
+                        <span id="commentsError"></span>
+                </div>
+                </div>
+
+                <div class="row">   
+                    <div class="label">
+                        <label for="picture">Profile Picture</label>
+
+                        <input type="file" id="picture" name="picture"/>
+                    </div>
+                    <div class="error">
+                        <span id="pictureError"></span>
+                </div>
+                </div>
+
+
                 <div class="row">
                     <div class="label"></div>
                     <div class="control">

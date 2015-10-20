@@ -1,16 +1,3 @@
-<!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title></title>
-    </head>
-    <body>
-        <pre>
             <?php
             print_r($_POST);
 
@@ -105,18 +92,16 @@ and open the template in the editor.
                         $errors['devices'] = "Invalid device";
                         break;
 
-                        //REMINDER NOTE: finish validation for skills and devices as per video on form validation
+          
                     }
                 }
             }
             print_r($errors);
 
             if (empty($errors)) {
-                echo '<p>form data is valid</p>';
+               require 'response.php';
             } else {
                 echo '<p>form data is invalid</p>';
             }
             ?>
-        </pre>
-    </body>
-</html>
+
